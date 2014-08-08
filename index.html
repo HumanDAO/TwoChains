@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="./css/typeplate.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<title>TwoChains</title>
+</head>
+<body>
+	<div class="search">
+		<form>
+			<input type="text" autofocus placeholder="Make it phat... Give me NOMs">
+			<button></button>
+
+			<h4>Optional filters</h4>
+			<ul>
+				<li>
+					<strong>Price</strong>
+					<span>
+						<i>$</i>
+						<i>$</i>
+						<i>$</i>
+						<i>$</i>
+					</span>
+				</li>
+			</ul>
+		</form>
+	</div>
+	<div class="results">
+		<ul></ul>
+	</div>
+	<div class="info">
+	</div>
+
+	<script type="confusedMatt" id="confusedMatt">
+		<li>
+			<h4> <%= name %> </h4>
+			<address> <%= [location.address, location.city, location.state, location.postalCode ].join(', ') %> </address>
+			<span> rating </span>
+			<span> category </span>
+			<a href="#"> menu </a>
+			<img src="/1.png">
+		</li>
+	</script>
+
+	<script type="text/javascript" src="./js/lodash.js"></script>
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript" src="./js/backbone.js"></script>
+	<script type="text/javascript" src="./js/app.js"></script>
+</body>
+</html>

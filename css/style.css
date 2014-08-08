@@ -1,0 +1,93 @@
+:root {
+    --search-background-color: purple;
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+/* ---------------- search section */
+ .search {
+    background: var(--search-background-color);
+    height:100vh;
+    position: relative;
+}
+.search form {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}
+.search form input {
+    padding: 1em 1.5em;
+    width: 100%;
+    display: inline-block;
+    height: 3em;
+    vertical-align: top;
+}
+.search form button {
+    display: inline-block;
+    padding: 1.45em;
+    height: 3em;
+    vertical-align: top;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: yellow;
+    border: none;
+}
+/* ---------------- results */
+.results {
+	min-height: 100vh;
+}
+/* ---------------- grids */
+ .grid {
+    font-size: 0.1px;
+    /*hide whitespace between elements*/
+    text-align: justify;
+}
+.grid:after {
+    display: inline-block;
+    width: 100%;
+    content:'';
+}
+.grid > * {
+    font-size: 16px;
+    font-size: 1rem;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    transition: all .25s ease;
+}
+@media (min-width: 480px) {
+    .grid-2-480 > * {
+        width: 48%;
+    }
+}
+@media (min-width: 800px) {
+    .grid-2-800 > * {
+        width: 48%;
+    }
+    .grid-3-800 > * {
+        width: 30%;
+    }
+}
+@media (min-width: 1024px) {
+    .grid-2-1024 > * {
+        width: 48%;
+    }
+    .grid-3-1024 > * {
+        width: 30%;
+    }
+}
+/* ---------------- animations */
+ @keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(2em);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
